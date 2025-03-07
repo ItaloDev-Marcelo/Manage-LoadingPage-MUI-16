@@ -1,2 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
 
 
+body {
+     background-image: url(./assets/images/bg-tablet-pattern.svg);
+     background-repeat: no-repeat;
+     background-position: top -70px left 130px;
+     background-size: 95%;
+}
+
+:root {
+--Bright-Red: hsl(12, 88%, 59%);
+--Dark-Blue: hsl(228, 39%, 23%);
+--Dark-Grayish-Blue: hsl(227, 12%, 61%);
+--Very-Dark-Blue: hsl(233, 12%, 13%);
+--Very-Pale-Red: hsl(13, 100%, 96%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+
+
+
+.container-home-image img {
+    position: relative;
+    top: -1em;
+    max-width: 100%;
+    width: 80%;
+}
+
+.Home-section p {
+    color: var(--Dark-Grayish-Blue);
+}
+
+
+
+
+@media (min-width: 800px) {
+    .container-home-image img {
+        top: 7em;
+        width: 50%;
+    }   
+
+    .info-box {
+        padding: 5em 12em;
+    }
+
+    .info-box h1 {
+        margin-top: 2em;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    body {
+         background-position: top -70px left 550px;
+         background-size: 47%;
+    }
+
+
+    .container-home-image img {
+        top: 7em;
+        width: 60%;
+        left: 0px;
+    }   
+
+
+    .info-box {
+        padding: 5em 17em;
+    }
+
+    .info-box h1 {
+        
+        font-size: 2.3em;
+        margin-top: 1em;
+    }
+
+    .info-box p {
+        font-size: 1.4em;
+    }
+}

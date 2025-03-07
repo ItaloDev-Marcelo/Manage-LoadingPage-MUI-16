@@ -5,7 +5,7 @@ import ButtonItem from "../Button/Button";
 export default function navMobile() {
 
   return (
-    <AppBar color="#fff"sx={{display:'flex', justifyContent: 'space-between', boxShadow: 'none',alignContent: 'center', padding: '1em 10em'}} >
+    <AppBar color=" hsl(0, 0%, 98%)" sx={{display:'flex', justifyContent: 'space-between', boxShadow: 'none',alignContent: 'center', padding: '1em 10em'}} >
        <Stack sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems:   'center'}}>
        <Button>
             <img src={Logo} alt="" />

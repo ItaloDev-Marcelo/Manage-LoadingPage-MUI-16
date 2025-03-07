@@ -1,7 +1,8 @@
 import NavMobile from './components/Nav/navM';
 import NavDesk from './components/Nav/navD';
 import './App.css'
-import { Stack } from '@mui/material';
+import { Stack} from '@mui/material';
+import Home from './pages/Home';
 function App() {
 
   return (
@@ -20,8 +21,7 @@ function App() {
 
       <NavDesk />
       </Stack>
-
-      
+      <Home/>
     </>
   )
 }

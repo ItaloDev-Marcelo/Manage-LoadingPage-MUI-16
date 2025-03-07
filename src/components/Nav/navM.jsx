@@ -9,10 +9,10 @@ export default function navDesk() {
 
   return (
   <>
-       <AppBar color="#fff" sx={{boxShadow: 'none'}} >
+       <AppBar color="inherit" sx={{boxShadow: 'none'}} >
          <Stack sx={{display: {
         xs: 'flex',
-        md: 'none'
+        lg: 'none'
     }, flexDirection: 'row', justifyContent: 'space-between', padding: '.5em', alignContent: 'center'}}>
 
          <Button variant="text">
