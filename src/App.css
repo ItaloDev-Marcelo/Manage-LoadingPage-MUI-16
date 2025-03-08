@@ -27,9 +27,16 @@ body {
 
 .container-home-image img {
     position: relative;
-    top: -1em;
+    top: 2em;
     max-width: 100%;
     width: 80%;
+}
+
+.Home-section {
+    background-image: url(./assets/images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 55px left 225px;
+    background-size: 60%;
 }
 
 .Home-section p {
@@ -42,8 +49,21 @@ body {
 @media (min-width: 800px) {
     .container-home-image img {
         top: 7em;
-        width: 50%;
+        width: 40%;
     }   
+
+    body {
+        background-position: top -70px left 450px;
+        background-size: 47%;
+   }
+
+
+    .Home-section {
+        background-image: url(./assets/images/bg-tablet-pattern.svg);
+        background-repeat: no-repeat;
+        background-position: bottom 25px left 450px;
+        background-size: 45%;
+    }
 
     .info-box {
         padding: 5em 12em;
@@ -61,6 +81,13 @@ body {
          background-size: 47%;
     }
 
+
+    .Home-section {
+        background-image: url(./assets/images/bg-tablet-pattern.svg);
+        background-repeat: no-repeat;
+        background-position: bottom 45px left 670px;
+        background-size:50%;
+    }
 
     .container-home-image img {
         top: 7em;
@@ -82,4 +109,42 @@ body {
     .info-box p {
         font-size: 1.4em;
     }
+}
+
+
+@media (min-width: 1280px) {
+
+    body {
+         background-position: top -70px left 775px;
+         background-size: 45%;
+    
+    
+        }
+
+
+        .Home-section {
+            background-image: url('');
+        }
+
+
+    .info-box {
+         padding:5em 4em 0 4em ;
+    }
+
+
+   
+
+
+    
+    .container-home-image img {
+        top: 5%;
+        width: 1200px;
+        left: -2em;
+    }   
+
+
+   
+
+
+  
 }

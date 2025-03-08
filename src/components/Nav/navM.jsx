@@ -26,7 +26,7 @@ export default function navDesk() {
 
     </AppBar>
   
-    <Paper id='shadow' sx={{display:toggleMenu ? 'block': 'none' , padding: '1em', position: 'absolute', top: '8em', left: '1.5em', width: '87%'}}  >
+    <Paper id='shadow' sx={{display:toggleMenu ? 'block': 'none' , padding: '1em', position: 'absolute', top: '8em', left: '1.5em', width: '87%',zIndex: '1000' }}  >
       <Stack spacing={2} >
          <Button variant="text" sx={{color: 'blue', textTransform: 'capitalize','&:hover': {
             color: 'red',
