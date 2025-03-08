@@ -25,7 +25,7 @@ export default function Home() {
         xs: '0',
         md: '3em'
        }, position: 'relative', top:{xs: '2em', lg: '0'}}}>
-          <Typography component='h1' padding={{xs: '0 2em', lg: '0'}} fontSize='2.1em' fontWeight={700}>Bring everyone together to build better products.</Typography>
+          <Typography component='h1' padding={{xs: '0 2em', lg: '0'}} fontSize={{xs: '2.1em', lg: '3.5em'}} fontWeight={700}>Bring everyone together to build better products.</Typography>
           <Typography component='p' padding={{xs: '1.4em 3.4em', lg: '1em 0'}}> Manage makes it simple for software teams to plan day-to-day 
           tasks while keeping the larger team goals in view.</Typography>
           <ButtonItem text='Get Started' color={'white'} bg='orange' />
