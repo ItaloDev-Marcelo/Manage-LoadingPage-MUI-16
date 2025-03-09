@@ -3,6 +3,7 @@ import NavDesk from './components/Nav/navD';
 import './App.css'
 import { Stack} from '@mui/material';
 import Home from './pages/Home';
+import About from './pages/About';
 function App() {
 
   return (
@@ -22,6 +23,7 @@ function App() {
       <NavDesk />
       </Stack>
       <Home/>
+      <About/>
     </>
   )
 }

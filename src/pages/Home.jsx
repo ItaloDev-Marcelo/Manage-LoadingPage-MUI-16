@@ -22,7 +22,7 @@ export default function Home() {
          <img src={HomeBanner} alt=''  />
        </Box>
        <Box component='div'className='info-box' sx={{marginTop: {
-        xs: '0',
+        xs: '7em',
         md: '3em'
        }, position: 'relative', top:{xs: '2em', lg: '0'}}}>
           <Typography component='h1' padding={{xs: '0 2em', lg: '0'}} fontSize={{xs: '2.1em', lg: '3.5em'}} fontWeight={700}>Bring everyone together to build better products.</Typography>

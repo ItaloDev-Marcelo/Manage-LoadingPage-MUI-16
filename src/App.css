@@ -27,7 +27,7 @@ body {
 
 .container-home-image img {
     position: relative;
-    top: 2em;
+    top: 8em;
     max-width: 100%;
     width: 80%;
 }
@@ -46,10 +46,13 @@ body {
 
 
 
+
+
+
 @media (min-width: 800px) {
     .container-home-image img {
-        top: 7em;
-        width: 40%;
+        top: 10em;
+        width: 55%;
     }   
 
     body {
@@ -66,7 +69,11 @@ body {
     }
 
     .info-box {
-        padding: 5em 12em;
+        padding: 2em 12em;
+    }
+
+    .information-box {
+        padding: 0 10em;
     }
 
     .info-box h1 {
