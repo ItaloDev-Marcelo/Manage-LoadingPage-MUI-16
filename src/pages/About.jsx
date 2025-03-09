@@ -3,21 +3,23 @@ import Grid from '@mui/material/Grid2';
 import Card from '../components/InfoCards';
 
 export default function About() {
+
+  // padding={{xs: '1em 2.4em ', lg: '1em 7em'}}
   return (
     <Stack component='section'>
-        <Grid contained padding={{xs: '1em 2.4em ', lg: '1em 7em'}}>
+        <Grid contained >
           <Grid size={{xs: 12, lg:6}} >
              <Stack >
-                <Stack className='information-box' margin='1em 0'  textAlign={{xs: 'center', lg: 'left'}} >
+                <Stack padding={{xs: '1em 2.4em ', lg: '1em 7em'}} className='information-box' margin='1em 0'  textAlign={{xs: 'center', lg: 'left'}} >
                 <Typography component='h2' margin='1.5em 0 1em 0' padding={{xs: '0 2em'}} fontSize={{xs: '1.7em'}} fontWeight='600'> What’s different about Manage?</Typography>
-                <Typography component='p'> Manage provides all the functionality your team needs, without 
+                <Typography component='p' padding='0 2em'> Manage provides all the functionality your team needs, without 
   the complexity. Our software is tailor-made for modern digital 
   product teams. </Typography>
                 </Stack>
              </Stack>
           </Grid>
           <Grid size={{xs: 12, lg:6}} >
-             <Stack alignSelf={{md: 'center'}} >
+             <Stack className='container' alignSelf={{md: 'center'}} >
              <Card level='01' levelTitle='Track company-wide progress' textInfo='See how your day-to-day tasks fit into the wider vision. Go from 
   tracking progress at the milestone level all the way done to the 
   smallest of details. Never lose sight of the bigger picture again.' />

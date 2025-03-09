@@ -1,19 +1,19 @@
-import { Stack, Typography} from "@mui/material";
+import { Stack, Typography, Box} from "@mui/material";
 import slideDt from './slideData'
 import ButtonItem from "../Button/Button";
 
-export default function sliderMobile() {
+export default function sliderDesk() {
 
   const SlideData = slideDt;
   
   return (
-    <Stack component='section' >
+    <Stack component='section'>
        <Typography component='h4' className='headerTitle'>What they’ve said</Typography>
-        <Stack display={flex} spacing={4}>
+        <Stack display='flex' spacing={4}>
         {
           SlideData.map(({profilePhoto, name, info}) => {
               return (
-                     <Stack component='article' className='slideD' display={navItem === 'card0' ? 'flex' : 'none'}>
+                     <Stack component='article' className='slideD' >
                                  <Box className='profile-information-area'>
                                     <Box className='profile-photo'>
                                     <img src={profilePhoto} alt={name} />

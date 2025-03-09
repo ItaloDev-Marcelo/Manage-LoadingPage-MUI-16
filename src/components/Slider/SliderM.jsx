@@ -10,17 +10,17 @@ import { useState } from 'react';
 export default function sliderMobile() {
   const [navItem, setNavItem] = useState('card0');
   return (
-    <Stack component='section' >
-       <Typography component='h4' className='headerTitle'>What they’ve said</Typography>
+    <Stack component='section' padding='1em 2em' alignSelf='center' >
+       <Typography component='h4' className='headerTitle' mb={4} textAlign='center' fontWeight='600' fontSize={{xs: '2em', lg: '3em'}}>What they’ve said</Typography>
         <Stack className='slider-container'>
            <Stack component='article' className='card' display={navItem === 'card0' ? 'flex' : 'none'}>
               <Box className='profile-information-area'>
                  <Box className='profile-photo'>
-                 <img src={Img1} alt='Anisha Li' />
+                 <img src={Img1} alt='Anisha Li'   />
                  </Box>
-                 <Typography component='p' className='profile-name'>Anisha Li</Typography>
+                 <Typography component='p' className='profile-name' margin='-.5em 0 1em 0'>Anisha Li</Typography>
               </Box>
-              <Typography component='p' className='information'> “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</Typography>
+              <Typography component='p' className='information' padding='0 3em 2em 3em'> “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</Typography>
            </Stack>
            <Stack component='article' className='card' display={navItem === 'card1' ? 'flex' : 'none'}>
               <Box className='profile-information-area'>
@@ -49,14 +49,17 @@ export default function sliderMobile() {
               </Box>
               <Typography component='p' className='information'>“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</Typography>
            </Stack>
-           <Stack display='flex'>
-              <Box className='bullet' onClick={()  => setNavItem('card0')}></Box>
-              <Box className='bullet' onClick={()  => setNavItem('card1')}></Box>
-              <Box className='bullet' onClick={()  => setNavItem('card2')}></Box>
-              <Box className='bullet' onClick={()  => setNavItem('card3')}></Box>
+           <Stack display='flex' position='relative' top='-1.5em' flexDirection='row' justifyContent='center'>
+              <Box className={navItem === 'card0' ? 'bullet active' : 'bullet'} onClick={()  => setNavItem('card0')}></Box>
+              <Box className={navItem === 'card1' ? 'bullet active' : 'bullet'}  onClick={()  => setNavItem('card1')}></Box>
+              <Box className={navItem === 'card2' ? 'bullet active' : 'bullet'}  onClick={()  => setNavItem('card2')}></Box>
+              <Box className={navItem === 'card3' ? 'bullet active' : 'bullet'}  onClick={()  => setNavItem('card3')}></Box>
            </Stack>
         </Stack>
+        
+        <Stack component='div' >
         <ButtonItem text='Get Started' color='white' bg='orange' />
+        </Stack>
     </Stack>
   )
 }

@@ -11,6 +11,7 @@ body {
      background-repeat: no-repeat;
      background-position: top -70px left 130px;
      background-size: 95%;
+     overflow-x: hidden;
 }
 
 :root {
@@ -44,10 +45,54 @@ body {
 }
 
 
+.profile-information-area .profile-photo > img {
+    position: relative;
+    top: -10px;
+width: 57px;
+}
+
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    background-color: var(--Very-Light-Gray);
+    height: 160px;
+    margin: 1em 0 3em 0;
+}
+
+.card:nth-of-type(2), .card:nth-of-type(3), .card:nth-of-type(4) {
+    height: 220px;
+}
+
+.card:nth-of-type(2)  > .information , .card:nth-of-type(3)  > .information , .card:nth-of-type(4)  > .information   {
+    padding: 1em 5em;
+}
+
+.card .information {
+    
+    padding-bottom: 2em;
+}
 
 
 
+.bullet {
+    width: 10px;
+    height: 10px;
+    border: 1px solid hsl(12, 88%, 59%);
+    border-radius: 50px;
+}
 
+.bullet:hover, .bullet:active, .bullet.active {
+    background-color: var(--Bright-Red);
+    border: none;
+}
+
+.bullet:not(:nth-of-type(1)) ,.bullet:not(:nth-of-type(4)){
+    margin: 0 .2em;
+}
 
 @media (min-width: 800px) {
     .container-home-image img {
