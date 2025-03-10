@@ -6,20 +6,20 @@ export default function About() {
 
   // padding={{xs: '1em 2.4em ', lg: '1em 7em'}}
   return (
-    <Stack component='section' sx={{margin: '1.5em 0'}} >
-        <Grid contained >
-          <Grid size={{xs: 12, lg:6}} >
-             <Stack >
-                <Stack padding={{xs: '1em 2.4em ', lg: '1em 7em'}} className='information-box' margin='1em 0'  textAlign={{xs: 'center', lg: 'left'}} >
-                <Typography component='h2' margin='1.5em 0 1em 0' padding={{xs: '0 2em'}} fontSize={{xs: '1.7em'}} fontWeight='600'> What’s different about Manage?</Typography>
-                <Typography component='p' padding='0 2em'> Manage provides all the functionality your team needs, without 
+    <Stack component='div'  sx={{margin: '1.5em 0'}}  >
+        <Grid container  >
+          <Grid   size={{ xs: 12, md: 6 }} >
+             <Stack    >
+                <Stack padding={{xs: '1em 2.4em ',md: '0', lg: '1em 7em'}} className='information-box' margin='1em 0'  textAlign={{xs: 'center', lg: 'left'}} >
+                <Typography component='h2' margin={{xs: '1.5em 0 1em 0', md: '0'}} padding={{xs: '0 2em', md: '0'}} fontSize={{xs: '1.7em'}} fontWeight='600'> What’s different about Manage?</Typography>
+                <Typography component='p' padding={{xs: '0 2em', md: '0 3em 0 0'}}> Manage provides all the functionality your team needs, without 
   the complexity. Our software is tailor-made for modern digital 
   product teams. </Typography>
                 </Stack>
              </Stack>
           </Grid>
-          <Grid size={{xs: 12, lg:6}} >
-             <Stack className='container' alignSelf={{md: 'center'}} >
+          <Grid   size={{ xs: 12, md: 6 }} >
+             <Stack className='container'  alignSelf={{md: 'left'}} >
              <Card level='01' levelTitle='Track company-wide progress' textInfo='See how your day-to-day tasks fit into the wider vision. Go from 
   tracking progress at the milestone level all the way done to the 
   smallest of details. Never lose sight of the bigger picture again.' />
@@ -31,7 +31,6 @@ export default function About() {
   productivity solution.' />
                 </Stack>
           </Grid>
-          
         </Grid>
     </Stack>
   )
