@@ -11,14 +11,14 @@ export default function sliderMobile() {
   const [navItem, setNavItem] = useState('card0');
   return (
     <Stack component='section' padding='1em 2em' alignSelf='center' >
-       <Typography component='h4' className='headerTitle' mb={4} textAlign='center' fontWeight='600' fontSize={{xs: '2em', lg: '3em'}}>What they’ve said</Typography>
+       <Typography component='h4' className='headerTitle' m='2em 0 2em 0' textAlign='center' fontWeight='600' fontSize={{xs: '2em', lg: '3em'}}>What they’ve said</Typography>
         <Stack className='slider-container'>
            <Stack component='article' className='card' display={navItem === 'card0' ? 'flex' : 'none'}>
               <Box className='profile-information-area'>
                  <Box className='profile-photo'>
                  <img src={Img1} alt='Anisha Li'   />
                  </Box>
-                 <Typography component='p' className='profile-name' margin='-.5em 0 1em 0'>Anisha Li</Typography>
+                 <Typography component='p' className='profile-name'>Anisha Li</Typography>
               </Box>
               <Typography component='p' className='information' padding='0 3em 2em 3em'> “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</Typography>
            </Stack>

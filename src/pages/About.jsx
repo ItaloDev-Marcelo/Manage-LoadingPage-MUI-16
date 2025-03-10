@@ -6,7 +6,7 @@ export default function About() {
 
   // padding={{xs: '1em 2.4em ', lg: '1em 7em'}}
   return (
-    <Stack component='section'>
+    <Stack component='section' sx={{margin: '1.5em 0'}} >
         <Grid contained >
           <Grid size={{xs: 12, lg:6}} >
              <Stack >
