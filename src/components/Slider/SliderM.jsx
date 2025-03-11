@@ -57,8 +57,8 @@ export default function sliderMobile() {
            </Stack>
         </Stack>
         
-        <Stack component='div' >
-        <ButtonItem text='Get Started' color='white' bg='orange' />
+        <Stack component='div' width='200px' alignSelf='center' >
+        <ButtonItem  text='Get Started' color='white' bg='orange' />
         </Stack>
     </Stack>
   )
