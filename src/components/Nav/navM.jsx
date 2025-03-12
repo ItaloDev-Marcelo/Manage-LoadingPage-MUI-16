@@ -10,7 +10,7 @@ export default function navDesk() {
  
   return (
   <>
-       <AppBar id='navMobile' color="trasparent" sx={{boxShadow: 'none'}} >
+       <AppBar color='inherit' id='navMobile' color="trasparent" sx={{boxShadow: 'none'}} >
          <Stack sx={{display: {
         xs: 'flex',
         lg: 'none'
