@@ -152,6 +152,25 @@ width: 57px;
     
 }
 
+@media (min-width: 960px) {
+     
+    .Home-section {
+        background-position: bottom 25px left 650px;
+    }
+
+    body {
+        background-position: top -70px left 550px;
+        background-size: 50%;
+   }
+
+    .card {
+        width: 450px;
+        padding:2em  ;
+    }
+
+ 
+}
+
 @media (min-width: 1024px) {
 
     body {
@@ -202,22 +221,30 @@ width: 57px;
 
         .Home-section {
             background-image: url('');
+            padding: 7em 10em;
+            margin-bottom: 10em;
         }
 
 
     .info-box {
-         padding:5em 4em 0 4em ;
+        max-width: 400px;
+        margin-left: 2.5em;
+        padding: 0;
     }
 
+
+    h1 {
+        padding: 2em 0 .5em 0 !important;
+    }
 
    
 
 
     
     .container-home-image img {
-        top: 5%;
-        width: 1200px;
-        left: -2em;
+        top: 7em;
+        width: 500px;
+        left: -14em;
     }   
 
 

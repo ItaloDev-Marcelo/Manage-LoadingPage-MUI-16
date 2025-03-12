@@ -7,8 +7,8 @@ export default function sliderDesk() {
   const SlideData = slideDt;
   
   return (
-    <Stack component='section' display='flex'  >
-       <Typography component='h4' className='headerTitle' fontSize='3em' position='relative' top='1.5em' marginLeft='-3.5em' textAlign='center'>What they’ve said</Typography>
+    <Stack component='section' display='flex' justifyContent='center' alignContent='center' textAlign='center' alignItems='center'  >
+       <Typography component='h4' position='relative' top='1em' left='-1.5em' className='headerTitle' fontSize='3em'  >What they’ve said</Typography>
         <Stack className="carrousel">
         <Stack  className="carrousel-container" display='flex' flexDirection='row'>
         {
@@ -32,9 +32,9 @@ export default function sliderDesk() {
       
         </Stack>
         </Stack>
-        <Box sx={{position: 'relative' ,top:'1.5em', marginLeft: '-5.5em',  textAlign:'center'}}>
-        <ButtonItem text='Get Started' color='white' bg='orange' />
-        </Box>
+        <Stack position='relative' top='1em' left='-5em'  minWidth='200px' >
+        <ButtonItem text='Get Started'  color='white' bg='orange' />
+        </Stack>
     </Stack>
   )
 }
