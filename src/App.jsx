@@ -14,7 +14,7 @@ function App() {
   var lastScrollTop1 = 0;
   let navbar1 = document.getElementById('navMobile');
 
-  window.addEventListener('scroll', function() {
+  window.addEventListener('touchmove', function() {
      var scrollTop = window.pageYOffset || document.scrollTop;
      if  ( scrollTop > lastScrollTop1 )  {
         navbar1.style.top = '-80px'

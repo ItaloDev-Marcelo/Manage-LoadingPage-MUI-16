@@ -14,7 +14,7 @@ export default function navDesk() {
          <Stack sx={{display: {
         xs: 'flex',
         lg: 'none'
-    }, flexDirection: 'row', position: 'relative', left: '0', justifyContent: 'space-between', padding: '.5em', alignContent: 'center'}}>
+    }, flexDirection: 'row', position: 'fixed', width: '100%', left: '.5em', justifyContent: 'space-between', padding: '.5em', alignContent: 'center'}}>
 
          <Button variant="text">
              <img src={Logo} alt="" width={'90%'} />
