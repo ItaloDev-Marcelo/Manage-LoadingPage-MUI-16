@@ -4,8 +4,11 @@ import './App.css'
 import { Stack } from '@mui/material';
 import Home from './pages/Home';
 import About from './pages/About';
+import Footer from './pages/Footer';
 import SlideDesk from './components/Slider/sliderD';
 import SlideMobile from './components/Slider/SliderM';
+import MiddlePage from './pages/MiddlePage';
+
 function App() {
 
   return (
@@ -49,6 +52,8 @@ function App() {
       }}>
         <SlideDesk />
       </Stack>
+      <MiddlePage/>
+      <Footer/>
     </>
 
 
