@@ -7,13 +7,14 @@ export default function navDesk() {
 
   const [toggleMenu, setToggleMenu] = useState(false); 
 
+ 
   return (
   <>
-       <AppBar color="inherit" sx={{boxShadow: 'none'}} >
+       <AppBar id='navMobile' color="trasparent" sx={{boxShadow: 'none'}} >
          <Stack sx={{display: {
         xs: 'flex',
         lg: 'none'
-    }, flexDirection: 'row', justifyContent: 'space-between', padding: '.5em', alignContent: 'center'}}>
+    }, flexDirection: 'row', position: 'relative', left: '0', justifyContent: 'space-between', padding: '.5em', alignContent: 'center'}}>
 
          <Button variant="text">
              <img src={Logo} alt="" width={'90%'} />
@@ -26,7 +27,8 @@ export default function navDesk() {
 
     </AppBar>
   
-    <Paper id='shadow' sx={{display:toggleMenu ? 'block': 'none' , padding: '1em', position: 'absolute', top: '8em', left: '1.5em', width: '87%',zIndex: '1000' }}  >
+    <Paper id='shadow'   sx={{display:toggleMenu ? 'block': 'none' ,boxShadow: '0px 75px 70px rgba(0,0,0,0.3)'
+, padding: '1em', position: 'absolute', top: '8em', left: '1.5em', width: '87%',zIndex: '1000' }}  >
       <Stack spacing={2} >
          <Button variant="text" sx={{color: 'blue', textTransform: 'capitalize','&:hover': {
             color: 'red',
@@ -50,6 +52,7 @@ export default function navDesk() {
          }}}>Community</Button>
       </Stack>
     </Paper>
+   
   </>
   )
 }

@@ -11,6 +11,19 @@ import MiddlePage from './pages/MiddlePage';
 
 function App() {
 
+  var lastScrollTop1 = 0;
+  let navbar1 = document.getElementById('navMobile');
+
+  window.addEventListener('scroll', function() {
+     var scrollTop = window.pageYOffset || document.scrollTop;
+     if  ( scrollTop > lastScrollTop1 )  {
+        navbar1.style.top = '-80px'
+     }else {
+        navbar1.style.top = '0'
+     }
+  })
+
+
   return (
     <>
       <Stack sx={{

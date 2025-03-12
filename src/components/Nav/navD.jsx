@@ -4,8 +4,19 @@ import ButtonItem from "../Button/Button";
 
 export default function navMobile() {
 
+   var lastScrollTop = 0;
+   let navbar = document.getElementById('navbar');
+   window.addEventListener('scroll', function() {
+      var scrollTop = window.pageYOffset || document.scrollTop;
+      if  ( scrollTop > lastScrollTop )  {
+         navbar.style.top = '-80px'
+      }else {
+         navbar.style.top = '0'
+      }
+   })
+
   return (
-    <AppBar color="inherit" sx={{display:'flex', justifyContent: 'space-between', boxShadow: 'none',alignContent: 'center', padding: '1em 10em'}} >
+    <AppBar id='navbar' color="trasparent" sx={{display:'flex', maxWidth: '1300px',  position: 'relative', left: '-1em' ,justifyContent: 'space-between', boxShadow: 'none',alignContent: 'center', padding: '1em 10em'}} >
        <Stack sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems:   'center'}}>
        <Button>
             <img src={Logo} alt="" />

@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid2';
 
 export default function Footer() {
   return (
-    <Stack>
+    <Stack >
          <Grid container >
               <Grid size={{xs: 12, md: 4}} sx={{order: {xs: 1, md: 3}}} >
                  <Stack >
