@@ -10,11 +10,11 @@ export default function navDesk() {
  
   return (
   <>
-       <AppBar color='inherit' id='navMobile' color="trasparent" sx={{boxShadow: 'none'}} >
+       <AppBar id='navMobile' sx={{boxShadow: 'none'}} color='inherit' >
          <Stack sx={{display: {
         xs: 'flex',
         lg: 'none'
-    }, flexDirection: 'row', position: 'fixed', width: '100%', left: '.5em', justifyContent: 'space-between', padding: '.5em', alignContent: 'center'}}>
+    }, flexDirection: 'row',  justifyContent: 'space-between', padding: '.5em', alignContent: 'center'}}>
 
          <Button variant="text">
              <img src={Logo} alt="" width={'90%'} />
