@@ -323,6 +323,14 @@ input[type='button'] {
     }   
 
 
+    .middle-Btn {
+        left: -12em;
+    }
+
+    #email-area {
+        padding-right: 10em;
+    }
+
    
 
     .carrousel {

@@ -14,7 +14,7 @@ export default function Footer() {
     <Stack bgcolor='hsl(233, 12%, 13%)' color='white' padding={{xs: '1.5em 2em', md: '2.5em 5em 0 1em'}} textAlign='center' >
          <Grid container >
               <Grid size={{xs: 12, md: 4}} sx={{order: {xs: 1, md: 3}}} >
-                 <Stack  >
+                 <Stack id='email-area'  >
                      <Box sx={{margin: '1.2em 0'}}>
                      <label></label>
                     <input type='text' name='email' placeholder='Updates in your inbox...'/>
