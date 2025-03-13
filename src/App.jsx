@@ -1,7 +1,7 @@
 import NavMobile from './components/Nav/navM';
 import NavDesk from './components/Nav/navD';
 import './App.css'
-import { Stack } from '@mui/material';
+import { Stack, Box  } from '@mui/material';
 import Home from './pages/Home';
 import About from './pages/About';
 import Footer from './pages/Footer';
@@ -35,8 +35,8 @@ function App() {
         <NavDesk />
       </Stack>
       <Home />
+      <Stack id='container-area' position='relative'>
       <About />
-
       <Stack sx={{
         display: {
           xs: 'flex',
@@ -45,8 +45,6 @@ function App() {
       }}>
         <SlideMobile />
       </Stack>
-
-
       <Stack sx={{
         display: {
           xs: 'none',
@@ -54,6 +52,7 @@ function App() {
         }
       }}>
         <SlideDesk />
+      </Stack>
       </Stack>
       
       

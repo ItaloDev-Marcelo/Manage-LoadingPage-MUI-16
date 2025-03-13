@@ -90,11 +90,11 @@ width: 57px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 300px;
+    min-width: 300px;
     background-color: var(--Very-Light-Gray);
     height: 200px;
     margin: 1em 0 3em 0;
-    padding:2em 1em ;
+    padding:2em 1.2em ;
 }
 
 
@@ -177,7 +177,7 @@ input[type='button'] {
         background-size: 47%;
    }
 
- 
+
 
 
     .Home-section {
@@ -248,6 +248,15 @@ input[type='button'] {
          background-size: 47%;
     }
 
+    #container-area {
+        background-image: url(./assets/images/bg-tablet-pattern.svg);
+            background-repeat: no-repeat;
+            background-position: bottom 110px left -225px;
+            background-size: 50%;
+       }
+    
+     
+
 
     .Home-section {
         background-image: url(./assets/images/bg-tablet-pattern.svg);
@@ -286,6 +295,11 @@ input[type='button'] {
          background-size: 45%;
         }
 
+        #container-area {
+                background-position: bottom 100px left -425px;
+                background-size: 45%;
+           }
+
         #MiddlePage:after {
             content: '';
             display: block;
@@ -298,12 +312,19 @@ input[type='button'] {
          }
 
 
+
+
         .Home-section {
             background-image: url('');
             padding: 7em 10em;
             margin-bottom: 10em;
         }
 
+
+        .info-box p {
+            max-width: 500px;
+            font-size: 1.2em;
+        }
 
     .info-box {
         max-width: 400px;
@@ -313,7 +334,8 @@ input[type='button'] {
 
 
     h1 {
-        padding: 2em 0 .5em 0 !important;
+        font-size: 3.5em !important;
+        padding: -2em 0 .5em 0 !important;
     }
     
     .container-home-image img {
@@ -405,4 +427,32 @@ input[type='button'] {
 
 
   
+}
+
+
+@media (min-width: 1440px) {
+    #navbar {
+        max-width: 100%;
+    }
+
+    body {
+        background-position: top -70px left 875px;
+        background-size: 50%;
+        overflow: visible;
+       }
+
+       
+       .Home-section {
+        background-image: url('');
+        padding: 2em 10em;
+        margin-bottom: 5em;
+    }
+
+
+       .container-home-image img {
+        top: 2em;
+        width: 550px;
+        left: -5em;
+    }   
+
 }
