@@ -10,7 +10,7 @@ import { useState } from 'react';
 export default function sliderMobile() {
   const [navItem, setNavItem] = useState('card0');
   return (
-    <Stack component='section' padding='1em 2em' alignSelf='center' >
+    <Stack className="slider-container" component='section' padding='1em 2em' alignSelf='center' >
        <Typography component='h4' className='headerTitle' m='2em 0 2em 0' textAlign='center' fontWeight='600' fontSize={{xs: '2em', lg: '3em'}}>What they’ve said</Typography>
         <Stack className='slider-container'>
            <Stack component='article' className='card' display={navItem === 'card0' ? 'flex' : 'none'}>

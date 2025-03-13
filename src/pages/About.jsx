@@ -5,7 +5,7 @@ import Card from '../components/InfoCards';
 export default function About() {
 
   return (
-    <Stack component='div' id='About'  sx={{margin: {xs:  '1em 0', md: '2em 0 0 1em'}}} padding={{xs: '1em 2.4em ', md: '1em 2em'}}  >
+    <Stack component='div' className='about' id='About'  sx={{margin: {xs:  '1em 0', md: '2em 0 0 1em'}}} padding={{xs: '1em 2.4em ', md: '1em 2em'}}  >
         <Grid container  >
           <Grid   size={{ xs: 12, md: 6 }} >
              <Stack    >
