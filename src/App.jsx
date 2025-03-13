@@ -8,6 +8,7 @@ import Footer from './pages/Footer';
 import SlideDesk from './components/Slider/sliderD';
 import SlideMobile from './components/Slider/SliderM';
 import MiddlePage from './pages/MiddlePage';
+import bg from './assets/images/bg-tablet-pattern.svg'
 
 function App() {
 
@@ -54,6 +55,8 @@ function App() {
       }}>
         <SlideDesk />
       </Stack>
+      
+      
       <MiddlePage/>
       <Footer/>
     </>

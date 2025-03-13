@@ -30,25 +30,30 @@ export default function navDesk() {
     <Paper id='shadow'   sx={{display:toggleMenu ? 'block': 'none' ,boxShadow: '0px 75px 70px rgba(0,0,0,0.3)'
 , padding: '1em', position: 'absolute', top: '8em', left: '1.5em', width: '87%',zIndex: '1000' }}  >
       <Stack spacing={2} >
-         <Button variant="text" sx={{color: 'blue', textTransform: 'capitalize','&:hover': {
-            color: 'red',
-            border: 'none'
+         <Button variant="text"sx={{  color: ' hsl(228, 39%, 23%)',textTransform: 'capitalize', '&:hover': {
+            color: ' hsl(227, 12%, 61%)',
+            border: 'none',
+            background: 'none'
          }}}>Pricing</Button>
-         <Button variant="text"  sx={{color: 'blue',textTransform: 'capitalize', '&:hover': {
-            color: 'red',
-            border: 'none'
+         <Button variant="text"  sx={{color: ' hsl(228, 39%, 23%)',textTransform: 'capitalize', '&:hover': {
+            color: ' hsl(227, 12%, 61%)',
+            border: 'none',
+            background: 'none'
          }}}>Product</Button>
-         <Button variant="text"  sx={{color: 'blue',textTransform: 'capitalize', '&:hover': {
-            color: 'red',
-            border: 'none'
+         <Button variant="text"  sx={{color: ' hsl(228, 39%, 23%)',textTransform: 'capitalize', '&:hover': {
+            color: ' hsl(227, 12%, 61%)',
+            border: 'none',
+            background: 'none'
          }}}>About us</Button>
-         <Button variant="text"  sx={{color: 'blue',textTransform: 'capitalize', '&:hover': {
-            color: 'red',
-            border: 'none'
+         <Button variant="text" sx={{color: ' hsl(228, 39%, 23%)',textTransform: 'capitalize', '&:hover': {
+            color: ' hsl(227, 12%, 61%)',
+            border: 'none',
+            background: 'none'
          }}}>Carrers</Button>
-         <Button variant="text"  sx={{color: 'blue',textTransform: 'capitalize', '&:hover': {
-            color: 'red',
-            border: 'none'
+         <Button variant="text" sx={{color: ' hsl(228, 39%, 23%)',textTransform: 'capitalize', '&:hover': {
+            color: ' hsl(227, 12%, 61%)',
+            border: 'none',
+            background: 'none'
          }}}>Community</Button>
       </Stack>
     </Paper>
