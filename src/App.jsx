@@ -1,7 +1,9 @@
 import NavMobile from './components/Nav/navM';
 import NavDesk from './components/Nav/navD';
 import './App.css'
-import { Stack, Box  } from '@mui/material';
+import { Stack } from '@mui/material';
+import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
 import Home from './pages/Home';
 import About from './pages/About';
 import Footer from './pages/Footer';
@@ -12,6 +14,15 @@ import MiddlePage from './pages/MiddlePage';
 function App() {
 
  
+  useEffect(() => {
+    ScrollReveal().reveal(".reveal", {
+      distance: "30px",
+      duration: 1000,
+      easing: "ease-in-out",
+      origin: "bottom",
+      reset: true, // Se quiser que a animação ocorra toda vez que o elemento entrar na tela
+    });
+  }, []);
 
 
   return (
@@ -34,8 +45,10 @@ function App() {
 
         <NavDesk />
       </Stack>
+      <Stack className='reveal'>
       <Home />
-      <Stack id='container-area' position='relative'>
+      </Stack>
+      <Stack className='reveal' id='container-area' position='relative'>
       <About />
       <Stack sx={{
         display: {
@@ -54,8 +67,13 @@ function App() {
         <SlideDesk />
       </Stack>
       </Stack>
+      <Stack className='reveal'>
       <MiddlePage/>
+      </Stack>
+      <Stack className='reveal'>
       <Footer/>
+      </Stack>
+      
     </>
 
 
