@@ -11,7 +11,7 @@ import FooterIcon from '../assets/images/logoD.svg'
 
 export default function Footer() {
   return (
-    <Stack bgcolor='hsl(233, 12%, 13%)' color='white' padding={{xs: '1em 2em', md: '2.5em 5em 0 1em'}} textAlign='center' >
+    <Stack bgcolor='hsl(233, 12%, 13%)' color='white' padding={{xs: '1.5em 2em', md: '2.5em 5em 0 1em'}} textAlign='center' >
          <Grid container >
               <Grid size={{xs: 12, md: 4}} sx={{order: {xs: 1, md: 3}}} >
                  <Stack  >
@@ -26,7 +26,7 @@ export default function Footer() {
                  </Stack>
               </Grid>
               <Grid size={{xs: 12, md: 4}}  sx={{order: {xs: 2, md: 2}}}  >
-                 <Stack display='flex' flexDirection='row' >
+                 <Stack display='flex' flexDirection='row' justifyContent='center' >
 
                        <List>
                           <ListItem>Home</ListItem>
