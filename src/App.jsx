@@ -16,10 +16,10 @@ function App() {
  
   useEffect(() => {
     ScrollReveal().reveal(".reveal", {
-      distance: "30px",
+      distance: "20px",
       duration: 1000,
       easing: "ease-in-out",
-      origin: "bottom",
+      origin: "top",
       reset: true, // Se quiser que a animação ocorra toda vez que o elemento entrar na tela
     });
   }, []);
@@ -50,7 +50,7 @@ function App() {
       </Stack>
       <Stack className='reveal' id='container-area' position='relative'>
       <About />
-      <Stack sx={{
+      <Stack className='reveal' sx={{
         display: {
           xs: 'flex',
           lg: 'none'
@@ -58,7 +58,7 @@ function App() {
       }}>
         <SlideMobile />
       </Stack>
-      <Stack sx={{
+      <Stack className='reveal' sx={{
         display: {
           xs: 'none',
           lg: 'flex'
@@ -67,9 +67,9 @@ function App() {
         <SlideDesk />
       </Stack>
       </Stack>
-      <Stack className='reveal'>
+    
       <MiddlePage/>
-      </Stack>
+
       <Stack className='reveal'>
       <Footer/>
       </Stack>
