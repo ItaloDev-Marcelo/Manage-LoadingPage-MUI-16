@@ -22,27 +22,27 @@ export default function navMobile() {
             <img src={Logo} alt="" />
         </Button>
         <Toolbar sx={{display:'flex', marginLeft: '-2.2em'}} >
-        <Button variant="text" sx={{color: ' hsl(228, 39%, 23%)',textTransform: 'capitalize', '&:hover': {
+        <Button variant="text" sx={{color: ' hsl(228, 39%, 23%)',fontWeight: '700',textTransform: 'capitalize', '&:hover': {
             color: ' hsl(227, 12%, 61%)',
             border: 'none',
             background: 'none'
          }}}>Pricing</Button>
-         <Button variant="text" sx={{color: ' hsl(228, 39%, 23%)',textTransform: 'capitalize', '&:hover': {
+         <Button variant="text" sx={{color: ' hsl(228, 39%, 23%)',fontWeight: '700',textTransform: 'capitalize', '&:hover': {
             color: ' hsl(227, 12%, 61%)',
             border: 'none',
             background: 'none'
          }}}>Product</Button>
-         <Button variant="text"  sx={{color: ' hsl(228, 39%, 23%)',textTransform: 'capitalize', '&:hover': {
+         <Button variant="text"  sx={{color: ' hsl(228, 39%, 23%)',fontWeight: '700',textTransform: 'capitalize', '&:hover': {
             color: ' hsl(227, 12%, 61%)',
             border: 'none',
             background: 'none'
          }}}>About us</Button>
-         <Button variant="text"  sx={{color: ' hsl(228, 39%, 23%)',textTransform: 'capitalize', '&:hover': {
+         <Button variant="text"  sx={{color: ' hsl(228, 39%, 23%)',fontWeight: '700',textTransform: 'capitalize', '&:hover': {
             color: ' hsl(227, 12%, 61%)',
             border: 'none',
             background: 'none'
          }}}>Carrers</Button>
-         <Button variant="text"  sx={{color: ' hsl(228, 39%, 23%)',textTransform: 'capitalize', '&:hover': {
+         <Button variant="text"  sx={{color: ' hsl(228, 39%, 23%)',fontWeight: '700',textTransform: 'capitalize', '&:hover': {
             color: ' hsl(227, 12%, 61%)',
             border: 'none',
             background: 'none'

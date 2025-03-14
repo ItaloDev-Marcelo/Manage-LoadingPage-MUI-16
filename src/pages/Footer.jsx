@@ -48,7 +48,7 @@ export default function Footer() {
               <Grid size={{xs: 12, md: 4}}  sx={{order: {xs: 2, md: 2}}}  >
                  <Stack display='flex' flexDirection='row' justifyContent='center' >
 
-                       <List>
+                       <List sx={{paddingLeft: {xs:  '1em', md: '0'}}}>
                           <ListItem>Home</ListItem>
                           <ListItem>Pricing</ListItem>
                           <ListItem>Products</ListItem>
@@ -65,8 +65,8 @@ export default function Footer() {
               </Grid>
               <Grid size={{xs: 12, md: 4}}  sx={{order: {xs: 3, md: 1}}}>
                  <Stack display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
-                      <Stack >
-                           <Stack display='flex' margin='1.2em 0' flexDirection='row'>
+                      <Stack flexDirection={{md:'column-reverse'}} >
+                           <Stack display='flex' margin='1.2em 0'  flexDirection='row' position='relative' top='1.7em'>
                            <Box >
                              <IconButton className='icon' >
                                 <FacebookIcon fontSize='large'/>
@@ -93,7 +93,7 @@ export default function Footer() {
                              </IconButton>
                            </Box>
                            </Stack>
-                           <IconButton sx={{position: 'relative', left: {md: '-1.7em'}, top: {md: '1em'}}}>
+                           <IconButton sx={{position: 'relative', left: {md: '-1.7em'}, top:  '1em'}}>
                                <img src={FooterIcon} alt=''/>
                            </IconButton>
                       </Stack>
